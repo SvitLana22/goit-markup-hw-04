@@ -101,8 +101,8 @@ img {
 .header-info-list {
     display: flex;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
 }
 .header-info-item {
     color: var(--text-color);
@@ -313,7 +313,7 @@ img {
 .clients-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -322,37 +322,30 @@ img {
 }
 .clients-list {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: -15px;
 }
-
 .clients-item {
     display: flex;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    margin-left: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.clients-item:first-child {
-    margin-left: 0;
-}
-.clients-item:hover,
-.clients-item:focus {
-    border: 1px solid var(--accent-color)
+    margin: 15px;
 }
 .clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
     color: #AFB1B8;
 }
 .clients-link:hover,
 .clients-link:focus {
-    border-radius: var(--accent-color);
+    border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
 .clients-icon {
-    align-items: center;
     fill: currentColor;
 }
 /* -----------FOOTER-----------*/
@@ -423,7 +416,7 @@ img {
 .footer-top-text {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-white-color);
@@ -435,12 +428,11 @@ img {
 } 
 .footer-soc-list {
     display: flex;
-    
+    margin-top: 20px;
 }
 .footer-soc-item {
     width: 44px;
     height: 44px;
-    margin-top: 20px;
     margin-left: 10px;
 }
 .footer-soc-item:first-child {
@@ -484,7 +476,6 @@ img {
     text-align: center;
     cursor: pointer;
     padding: 6px 22px;
-
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -507,13 +498,15 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     width: calc(100% / 3 - 30px);
     margin: 15px;
 }
-.content-item:hover,
-.content-item:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
-}
 .content-item:nth-last-child(-n+3) {
     margin-bottom: 0;
+}
+.content-link {
+    display: inline-block;
+}
+.content-link:hover,
+.content-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .content-card {
     border: 1px solid #EEEEEE;
